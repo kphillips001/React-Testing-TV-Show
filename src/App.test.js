@@ -731,8 +731,7 @@ test("App is rendering", async () => {
   render(<App />);
   });
 
-
-test ("Season change correctly when selected", async () => {
+  test ("Season change correctly when selected", async () => {
     mockFetchShow.mockResolvedValueOnce(episodesData);
     const { getByText } = render(<App />);
     
